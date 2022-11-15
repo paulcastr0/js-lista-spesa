@@ -7,15 +7,21 @@ Quando le stampe in console sono corrette, stampare gli elementi in un elenco pu
 //Dichiarazione lista della spesa
 let arrayList= ["pane","latte","cereali","insalata","mela","kiwi"];
 
+/*
 //Inizializzazione funzione for per stampare individualmente gli elementi della lista
 for( let i = 0 ; i <arrayList.length ; i ++){
     console.log(i + ". " + arrayList[i]);
 
 }
+*/
 
-
-
-
+//Inizializzazione funzione while per stampare singoli elementi della lista 
+let i = 0;
+while(i < arrayList.length) {
+    console.log(i + ". " + arrayList[i]);
+    document.getElementById("Grocery-Items").innerHTML += "<li>" + arrayList[i] + "</li>";
+    i++;
+}
 
 
 
